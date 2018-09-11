@@ -1,0 +1,41 @@
+.song {
+    display: grid;
+    grid-template-areas:
+        "art name playing_indicator"
+        "art artist playing_indicator"
+        "art album playing_indicator";
+    grid-template-columns: min-content auto min-content;
+    grid-template-rows: auto;
+}
+
+.song__playing-indicator {
+    display: none;
+    padding: 0 1em;
+    color: #222;
+    font-size: 1.5em;
+    grid-area: playing_indicator;
+    align-self: center;
+}
+
+.song.song--is-playing .song__playing-indicator {
+    display: block;
+}
+
+.song__art {
+    grid-area: art;
+    margin-right: 0.5em;
+}
+
+.song__name {
+    grid-area: name;
+    font-weight: bold;
+}
+
+.song__artist {
+    grid-area: artist;
+}
+
+.song__album {
+    grid-area: album;
+}
+

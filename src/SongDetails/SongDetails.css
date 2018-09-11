@@ -1,0 +1,35 @@
+.song-details {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.song-details__album-cover {
+    flex: 0 1 auto;
+    margin-bottom: 30px;
+}
+
+.song-details__album-songs {
+    overflow: auto;
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.song-details__album-song {
+    padding: 1em;
+    text-align: left;
+    border-top: 1px solid #bbb;
+}
+
+.song-details__control {
+    width: 3em;
+    height: 3em;
+    margin: 1em;
+    padding: 0;
+    border: 1px solid #bbb;
+    font-size: 1.5em;
+}

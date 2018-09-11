@@ -1,0 +1,12 @@
+.songs-list__song {
+    padding: 1em;
+    cursor: pointer;
+}
+
+.songs-list__song + .songs-list__song {
+    border-top: 1px solid #bbb;
+}
+
+.songs-list__song.songs-list__song--selected {
+    background-color: rgba(0, 0, 0, 0.2);
+}
