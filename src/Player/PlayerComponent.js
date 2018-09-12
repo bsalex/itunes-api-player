@@ -13,7 +13,7 @@ const PlayerComponent = ({isPlaying, isStoppable, onPlay, onPause, onStop, class
                 ⏸
             </button>
             <button disabled={!isStoppable} onClick={onStop} className="player__control player__stop">
-                ■
+                ⏹
             </button>
         </div>
     );
